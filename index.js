@@ -9,6 +9,6 @@ app.engine('.html',require('ejs').__express);
 app.get('/', function(req, res) {
     res.render('./index.html');
   });
-  var server = app.listen(3000, function () {  
-    console.log('Example app listening on port 3000!');  
+  var server = app.listen(80, function () {  
+    console.log('Example app listening on port 80!');  
   });  
