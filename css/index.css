@@ -1,0 +1,27 @@
+.wrap{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../img/back.jpg) center center;
+    background-size: 100% 100%;
+}
+.wrap>div{
+    width: 100%;
+    position: relative;
+    top: -2rem;
+}
+.wrap .input-control{
+    margin-bottom: 1rem;
+}
+.send-code{
+    position: absolute;
+    right: 0;
+    top: 0;
+}

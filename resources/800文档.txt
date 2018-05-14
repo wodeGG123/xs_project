@@ -1,0 +1,44 @@
+发送手机验证码
+
+路由：/send
+请求方式：get
+参数：
+	mobile 	必选		手机号
+
+返回结果：
+	失败：{"state":"true","data":[]}
+
+	失败：
+		{
+		    "state": false,
+		    "message": "this is the error message",
+		    "error": {
+		        "description": "手机 不能为空。",
+		        "code": "2001"
+		    }
+		}
+
+
+
+
+提交名字等信息：
+
+路由：/submit
+请求方式：post
+参数：
+	mobile		必选			手机号
+	name		必选			名字
+	verify		必选			手机验证码
+
+返回结果：
+	失败：{"state":"true","data":[]}
+
+	失败：
+		{
+		    "state": false,
+		    "message": "this is the error message",
+		    "error": {
+		        "description": "手机 不能为空。",
+		        "code": "2001"
+		    }
+		}

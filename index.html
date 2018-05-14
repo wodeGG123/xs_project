@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello world!</title>
+    <!-- zui -->
+    <link href="plugins/zui/css/zui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="wrap">
+        <div>
+                <div class="input-control has-icon-left">
+                    <input required id="user_name" type="text" class="form-control" placeholder="姓名">
+                    <label for="user_name" class="input-control-icon-left"><i class="icon icon-user "></i></label>
+                </div>
+                <div class="input-control has-icon-left">
+                    <input id="mobile" type="text" class="form-control" placeholder="手机号">
+                    <label for="mobile" class="input-control-icon-left"><i class="icon icon-mobile "></i></label>
+                </div>
+                <div class="input-control has-icon-left">
+                    <input id="send-code" type="text" class="form-control" placeholder="输入验证码">
+                    <label for="send-code" class="input-control-icon-left"><i class="icon icon-keyboard "></i></label>
+                    <div class="send-code"><button id='send-code-bt' class="btn btn-info" type="button">发送验证码</button></div>
+                </div>
+                <div>
+                        <button id="submit" class="btn btn-block btn-success" type="button">提交</button>
+                </div>
+        </div>
+        
+    </div>
+    <!-- 在此处编码你的创意 -->
+
+    <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- ZUI Javascript组件 -->
+    <script src="plugins/zui/js/zui.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
