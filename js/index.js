@@ -29,20 +29,20 @@ $(function(){
             alert('手机号填写错误！');
             return;
         }
-        if(parseInt(localStorage.getItem('num'))>5){
-            alert('您已不能再发送验证码！');
-            return;
-        }
+        // if(parseInt(localStorage.getItem('num'))>5){
+        //     alert('您已不能再发送验证码！');
+        //     return;
+        // }
         this.setAttribute('disabled','true');
         $.get('http://39.108.114.173:8080/send',{
             mobile:$('#mobile').val()
         },function(data){
-            if(localStorage.getItem('num')){
-                var num = parseInt(localStorage.getItem('num'));
-                localStorage.setItem('num',num+1);
-            }else{
-                localStorage.setItem('num',1);
-            }
+            // if(localStorage.getItem('num')){
+            //     var num = parseInt(localStorage.getItem('num'));
+            //     localStorage.setItem('num',num+1);
+            // }else{
+            //     localStorage.setItem('num',1);
+            // }
            
         })
         var _clear = setInterval(function(){
